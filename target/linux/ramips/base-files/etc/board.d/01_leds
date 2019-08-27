@@ -425,6 +425,10 @@ tplink,tl-wr902ac-v3)
 	ucidef_set_led_wlan "wlan2g" "wlan2g" "$boardname:green:wlan" "phy0tpt"
 	ucidef_set_led_switch "lan" "lan" "$boardname:green:lan" "switch0" "0x10"
 	;;
+tuoshi,ts7620n)
+	set_usb_led "$boardname:blue:usb"
+	set_wifi_led "$boardname:blue:wifi"
+	;;
 u25awf-h1)
 	set_wifi_led "u25awf:red:wifi"
 	ucidef_set_led_netdev "eth" "eth" "u25awf:green:lan" "eth0"

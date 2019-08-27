@@ -153,6 +153,7 @@ platform_check_image() {
 	tew-714tru|\
 	timecloud|\
 	tiny-ac|\
+	tuoshi,ts7620n|\
 	u25awf-h1|\
 	u7621-06-256M-16M|\
 	u7628-01-128M-16M|\
