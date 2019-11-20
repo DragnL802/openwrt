@@ -256,6 +256,7 @@ platform_check_image() {
 	mr200|\
 	tplink,c20-v1|\
 	tplink,c20-v4|\
+	tplink,c20-v5|\
 	tplink,c50-v3|\
 	tplink,tl-mr3420-v5|\
 	tplink,tl-wr842n-v5|\
@@ -350,6 +351,10 @@ platform_do_upgrade() {
 	ubnt-erx|\
 	ubnt-erx-sfp)
 		nand_do_upgrade "$ARGV"
+		;;
+	tplink,c20-v5)
+		MTD_ARGS="-t romfile"
+		default_do_upgrade "$ARGV"
 		;;
 	*)
 		default_do_upgrade "$ARGV"

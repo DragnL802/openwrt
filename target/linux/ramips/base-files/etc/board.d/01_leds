@@ -407,6 +407,7 @@ tplink,c20-v1)
 	set_usb_led "$boardname:blue:usb"
 	;;
 tplink,c20-v4|\
+tplink,c20-v5|\
 tplink,c50-v3)
 	ucidef_set_led_switch "lan" "lan" "$boardname:green:lan" "switch0" "0x1e"
 	ucidef_set_led_switch "wan" "wan" "$boardname:green:wan" "switch0" "0x01"
